@@ -7,22 +7,18 @@
 
 import Foundation
 
+
+
 extension MyApp.UIModels {
     struct ScreenModel : Decodable {
         var pageTitle : String?
-        var components : [Component]
+        var components : [MyApp.UIModels.ScreenModel.Component]
     }
 }
 
 extension MyApp.UIModels.ScreenModel {
     struct Component : Decodable {
         var type : MyApp.Components.ComponentsType
-        var data : ComponentsData
-    }
-}
-
-extension MyApp.UIModels.ScreenModel.Component {
-    struct ComponentsData : Decodable {
-        var imageUrl : String?
+        var data : [String:String]
     }
 }

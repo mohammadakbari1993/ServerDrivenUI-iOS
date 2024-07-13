@@ -14,4 +14,5 @@ struct MyApp {
     struct Services {}
     struct UIModels {}
     struct Components {}
+    struct Modules {}
 }
