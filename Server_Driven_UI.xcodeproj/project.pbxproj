@@ -18,6 +18,9 @@
 		5554060F2C4275E6000C6E9B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554060E2C4275E6000C6E9B /* NetworkError.swift */; };
 		555406142C4278A0000C6E9B /* UIModels.ScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555406132C4278A0000C6E9B /* UIModels.ScreenModel.swift */; };
 		555406172C4279CA000C6E9B /* ComponentsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555406162C4279CA000C6E9B /* ComponentsType.swift */; };
+		5554061A2C428193000C6E9B /* FeaturedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555406192C428193000C6E9B /* FeaturedImageComponent.swift */; };
+		5554061D2C4281B8000C6E9B /* UIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554061C2C4281B8000C6E9B /* UIComponent.swift */; };
+		555406212C428267000C6E9B /* View+ToAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555406202C428267000C6E9B /* View+ToAnyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		5554060E2C4275E6000C6E9B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		555406132C4278A0000C6E9B /* UIModels.ScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModels.ScreenModel.swift; sourceTree = "<group>"; };
 		555406162C4279CA000C6E9B /* ComponentsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsType.swift; sourceTree = "<group>"; };
+		555406192C428193000C6E9B /* FeaturedImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedImageComponent.swift; sourceTree = "<group>"; };
+		5554061C2C4281B8000C6E9B /* UIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponent.swift; sourceTree = "<group>"; };
+		555406202C428267000C6E9B /* View+ToAnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ToAnyView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		555405F32C42740E000C6E9B /* Server_Driven_UI */ = {
 			isa = PBXGroup;
 			children = (
+				5554061E2C428242000C6E9B /* Extensions */,
 				555406152C4279BF000C6E9B /* Components */,
 				555406112C42785C000C6E9B /* UIModels */,
 				555406022C427429000C6E9B /* Utils */,
@@ -131,9 +138,35 @@
 		555406152C4279BF000C6E9B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				555406182C428170000C6E9B /* FeaturedImageComponent */,
 				555406162C4279CA000C6E9B /* ComponentsType.swift */,
+				5554061C2C4281B8000C6E9B /* UIComponent.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		555406182C428170000C6E9B /* FeaturedImageComponent */ = {
+			isa = PBXGroup;
+			children = (
+				555406192C428193000C6E9B /* FeaturedImageComponent.swift */,
+			);
+			path = FeaturedImageComponent;
+			sourceTree = "<group>";
+		};
+		5554061E2C428242000C6E9B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5554061F2C428254000C6E9B /* View+Extensions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5554061F2C428254000C6E9B /* View+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				555406202C428267000C6E9B /* View+ToAnyView.swift */,
+			);
+			path = "View+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,12 +242,15 @@
 				5554060D2C427584000C6E9B /* WebService.swift in Sources */,
 				5554060F2C4275E6000C6E9B /* NetworkError.swift in Sources */,
 				555405F72C42740E000C6E9B /* ContentView.swift in Sources */,
+				5554061A2C428193000C6E9B /* FeaturedImageComponent.swift in Sources */,
 				555405F52C42740E000C6E9B /* Server_Driven_UIApp.swift in Sources */,
 				555406062C427479000C6E9B /* NAMESPACING.swift in Sources */,
 				555406042C427441000C6E9B /* Constants.swift in Sources */,
 				555406142C4278A0000C6E9B /* UIModels.ScreenModel.swift in Sources */,
 				5554060A2C4274FF000C6E9B /* Urls.swift in Sources */,
+				5554061D2C4281B8000C6E9B /* UIComponent.swift in Sources */,
 				555406172C4279CA000C6E9B /* ComponentsType.swift in Sources */,
+				555406212C428267000C6E9B /* View+ToAnyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
