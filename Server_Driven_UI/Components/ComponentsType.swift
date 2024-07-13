@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+extension MyApp.Components {
+    enum ComponentsType : String, Decodable {
+        case featuredImage
+    }
+}

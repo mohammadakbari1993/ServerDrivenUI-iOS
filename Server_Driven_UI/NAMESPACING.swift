@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct MyApp {
+    struct Utils {
+        struct Constants {}
+    }
+    struct Services {}
+    struct UIModels {}
+    struct Components {}
+}
