@@ -27,6 +27,11 @@
 		5554062B2C428AB3000C6E9B /* UIModels.ScreenModel.buildComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554062A2C428AB3000C6E9B /* UIModels.ScreenModel.buildComponents.swift */; };
 		555406322C428B9C000C6E9B /* MyApp.Modules.HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555406312C428B9C000C6E9B /* MyApp.Modules.HomePage.swift */; };
 		555406342C428BEA000C6E9B /* MyApp.Modules.HomePage.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555406332C428BEA000C6E9B /* MyApp.Modules.HomePage.ViewModel.swift */; };
+		559D8BA22C43B05F00A94B31 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559D8BA12C43B05F00A94B31 /* NetworkService.swift */; };
+		559D8BA52C43C20B00A94B31 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559D8BA42C43C20B00A94B31 /* JSON.swift */; };
+		559D8BAB2C43CDC200A94B31 /* Components.Carousel.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559D8BAA2C43CDC200A94B31 /* Components.Carousel.Model.swift */; };
+		559D8BAE2C43CEAF00A94B31 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559D8BAD2C43CEAF00A94B31 /* CarouselView.swift */; };
+		559D8BB02C43D12700A94B31 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559D8BAF2C43D12700A94B31 /* Carousel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		5554062A2C428AB3000C6E9B /* UIModels.ScreenModel.buildComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModels.ScreenModel.buildComponents.swift; sourceTree = "<group>"; };
 		555406312C428B9C000C6E9B /* MyApp.Modules.HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.Modules.HomePage.swift; sourceTree = "<group>"; };
 		555406332C428BEA000C6E9B /* MyApp.Modules.HomePage.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.Modules.HomePage.ViewModel.swift; sourceTree = "<group>"; };
+		559D8BA12C43B05F00A94B31 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		559D8BA42C43C20B00A94B31 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		559D8BAA2C43CDC200A94B31 /* Components.Carousel.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.Carousel.Model.swift; sourceTree = "<group>"; };
+		559D8BAD2C43CEAF00A94B31 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		559D8BAF2C43D12700A94B31 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 		555405F32C42740E000C6E9B /* Server_Driven_UI */ = {
 			isa = PBXGroup;
 			children = (
+				559D8BA32C43C1F700A94B31 /* Help */,
 				5554062C2C428ADB000C6E9B /* Modules */,
 				5554061E2C428242000C6E9B /* Extensions */,
 				555406152C4279BF000C6E9B /* Components */,
@@ -120,6 +131,7 @@
 			children = (
 				5554060C2C427584000C6E9B /* WebService.swift */,
 				5554060E2C4275E6000C6E9B /* NetworkError.swift */,
+				559D8BA12C43B05F00A94B31 /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -136,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				555406122C427885000C6E9B /* ScreenModel */,
+				559D8BA42C43C20B00A94B31 /* JSON.swift */,
 			);
 			path = UIModels;
 			sourceTree = "<group>";
@@ -152,6 +165,7 @@
 		555406152C4279BF000C6E9B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				559D8BA62C43CC9A00A94B31 /* Carousel */,
 				555406182C428170000C6E9B /* FeaturedImageComponent */,
 				555406162C4279CA000C6E9B /* ComponentsType.swift */,
 				5554061C2C4281B8000C6E9B /* UIComponent.swift */,
@@ -225,6 +239,39 @@
 				555406332C428BEA000C6E9B /* MyApp.Modules.HomePage.ViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		559D8BA32C43C1F700A94B31 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		559D8BA62C43CC9A00A94B31 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				559D8BAC2C43CDEC00A94B31 /* View */,
+				559D8BA92C43CDB400A94B31 /* Model */,
+				559D8BAF2C43D12700A94B31 /* Carousel.swift */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		559D8BA92C43CDB400A94B31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				559D8BAA2C43CDC200A94B31 /* Components.Carousel.Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		559D8BAC2C43CDEC00A94B31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				559D8BAD2C43CEAF00A94B31 /* CarouselView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,13 +355,18 @@
 				555406242C42875A000C6E9B /* FeaturedImageComponent.Model.swift in Sources */,
 				555406042C427441000C6E9B /* Constants.swift in Sources */,
 				555406142C4278A0000C6E9B /* UIModels.ScreenModel.swift in Sources */,
+				559D8BAB2C43CDC200A94B31 /* Components.Carousel.Model.swift in Sources */,
+				559D8BA52C43C20B00A94B31 /* JSON.swift in Sources */,
 				5554062B2C428AB3000C6E9B /* UIModels.ScreenModel.buildComponents.swift in Sources */,
 				5554060A2C4274FF000C6E9B /* Urls.swift in Sources */,
+				559D8BB02C43D12700A94B31 /* Carousel.swift in Sources */,
 				5554061D2C4281B8000C6E9B /* UIComponent.swift in Sources */,
 				555406172C4279CA000C6E9B /* ComponentsType.swift in Sources */,
+				559D8BA22C43B05F00A94B31 /* NetworkService.swift in Sources */,
 				555406212C428267000C6E9B /* View+ToAnyView.swift in Sources */,
 				555406322C428B9C000C6E9B /* MyApp.Modules.HomePage.swift in Sources */,
 				555406272C42881F000C6E9B /* Dictionary+Decode.swift in Sources */,
+				559D8BAE2C43CEAF00A94B31 /* CarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

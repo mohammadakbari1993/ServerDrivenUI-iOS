@@ -21,7 +21,12 @@ extension MyApp.Modules {
                 }.task {
                     await vm.getComponents()
                 }
+                .padding(.horizontal, 8)
+                .background(Color(.systemBackground))
+                
+                
             }
+            
         }
     }
     

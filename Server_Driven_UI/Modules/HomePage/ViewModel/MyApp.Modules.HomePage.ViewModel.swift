@@ -10,25 +10,29 @@ import SwiftUI
 
 protocol HomePageViewModelProtocol {
     var components : [UIComponent] { get set }
-    var service : MyApp.Services.WebService {get set}
+    var service : NetworkService {get set}
     func getComponents() async
 }
 @MainActor
 extension MyApp.Modules.HomePage {
     
     class ViewModel : ObservableObject, HomePageViewModelProtocol {
-        var service: MyApp.Services.WebService
+        var service: NetworkService
         
         @Published var components: [UIComponent] = []
         
-        init(service: MyApp.Services.WebService) {
+        init(service: NetworkService) {
             self.service = service
         }
         
         func getComponents() async {
             do {
-                let serviceModel = try await service.load(resource: MyApp.Utils.Constants.Urls.pet_listing)
+                
+                let serviceModel = try await service.load(resource: MyApp.Utils.Constants.Urls.pet_listing,
+                                                          model: MyApp.UIModels.ScreenModel.self)
+                
                 components = try serviceModel.buildCompnents()
+                
             } catch {
                 print(error.localizedDescription)
             }

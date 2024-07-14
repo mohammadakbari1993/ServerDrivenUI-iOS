@@ -22,6 +22,11 @@ extension MyApp.Components {
             AsyncImage(url: URL(string: uiModel.imageUrl)) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fill)
+                    .cornerRadius(10)
+                    .shadow(radius: 8)
+                    .padding(.horizontal)
+                    
+                    
             }placeholder: {
                 ProgressView()
             }.ToAnyView()

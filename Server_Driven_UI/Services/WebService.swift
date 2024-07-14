@@ -8,9 +8,10 @@
 import Foundation
 
 extension MyApp.Services {
-    class WebService {
+    
+    class WebService : NetworkService {
         
-        func load(resource : String) async throws -> MyApp.UIModels.ScreenModel {
+        func load<T: Decodable>(resource : String, model : T.Type) async throws -> T {
             
             guard let url = URL(string: resource) else {throw NetworkError.invalidUrl}
             
@@ -18,11 +19,12 @@ extension MyApp.Services {
             
             guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {throw NetworkError.invalidServiceResponse}
             
-            return try JSONDecoder().decode(MyApp.UIModels.ScreenModel.self, from: data)
+            return try JSONDecoder().decode(model, from: data)
             
         }
         
     }
+     
 }
 
 

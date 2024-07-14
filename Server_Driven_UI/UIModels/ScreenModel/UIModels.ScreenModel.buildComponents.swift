@@ -19,6 +19,11 @@ extension MyApp.UIModels.ScreenModel {
                     throw MyApp.Components.ComponentsError.decodingError
                 }
                 components.append(MyApp.Components.FeaturedImageComponent(uiModel: model))
+            case .carouselView:
+                guard let model : MyApp.Components.Carousel.Model = index.data.Decode() else {
+                    throw MyApp.Components.ComponentsError.decodingError
+                }
+                components.append(MyApp.Components.Carousel(uiModel: model))
             }
         }
         
